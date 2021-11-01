@@ -1,3 +1,257 @@
 @media (min-width: 1024px) {
-  
+  @font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Bebas Neue";
+    src: url("../fonts/BebasNeue-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .desktopWrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .container {
+    padding: 30px 40px;
+  }
+
+  .title {
+    font-family: "Bebas Neue";
+    font-size: 82px;
+    line-height: 0.9em;
+  }
+
+  .ordinaryText {
+    font-size: 18px;
+    line-height: 144%;
+  }
+
+  .logoImgTop,
+  .logoFooter {
+    max-width: 190px;
+    height: 100%;
+  }
+
+  .headerContent {
+    padding-bottom: 0;
+  }
+
+  .desktopWrapper {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .nav {
+    display: none;
+  }
+  .desktopNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navList {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .navLink {
+    position: relative;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.2s all;
+  }
+
+  .navText {
+    font-size: 16px;
+    padding: 0;
+    margin-right: 30px;
+    transition: 0.2s all;
+  }
+
+  .navLink:hover,
+  .navText:hover {
+    font-size: 17px;
+    transform: translate(1.1);
+  }
+
+  .contact {
+    width: max-content;
+    padding: 19px 45px 19px 32px;
+    margin: 0 !important;
+    margin-left: 190px !important;
+  }
+
+  .contact::before,
+  .contact::after {
+    left: 90%;
+  }
+
+  .contact::before {
+    transform: rotate(-45deg) translate(-14px);
+  }
+
+  .contact::after {
+    transform: rotate(45deg) translate(-14px);
+  }
+
+  .headerContent {
+    position: relative;
+    display: flex;
+    padding: 0;
+  }
+
+  .squaresBotDesktop,
+  .squaresTopDesktop {
+    display: block;
+    position: absolute;
+    max-width: 150px;
+  }
+
+  .squaresTopDesktop {
+    bottom: 0;
+  }
+
+  .textBlock {
+    align-self: center;
+    width: 50%;
+    margin-right: 200px;
+  }
+
+  .desktopTopBlock {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .topImg {
+    max-height: 806px;
+  }
+
+  .topHeaderSquares {
+    left: -1%;
+  }
+
+  .infoCard {
+    display: flex;
+  }
+
+  .main {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .infoSection,
+  .infoCard {
+    padding: 0;
+  }
+
+  .infoCard {
+    margin: 150px 0;
+  }
+
+  .infoSection .infoCard:nth-of-type(2n) {
+    flex-direction: row-reverse;
+  }
+
+  .infoSection .infoCard:nth-of-type(2n) .textBlock {
+    margin: 0 0 0 200px;
+  }
+
+  .contactUs {
+    position: relative;
+    height: 706px;
+    padding: 0;
+  }
+
+  .textBlockContact {
+    display: block;
+    position: absolute;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -70%);
+  }
+  .contactSquareTop,
+  .contactSquareBot {
+    position: absolute;
+    left: 0;
+    max-width: 100px;
+  }
+
+  .contactSquareBot {
+    top: 0;
+  }
+
+  .right {
+    left: 100%;
+    transform: translate(-100%);
+  }
+
+  .photoTop,
+  .photoBot,
+  .photoCenter {
+    display: block;
+    position: absolute;
+    max-width: 200px;
+    height: auto;
+  }
+
+  .photoCenter {
+    max-width: 250px;
+    top: 50%;
+    transform: translate(50%, -50%);
+  }
+
+  .photoBot {
+    left: 100%;
+    bottom: 0;
+    transform: translate(-250%, 0%);
+  }
+
+  .photoTop {
+    left: 100%;
+    top: 0;
+    transform: translate(-150%, 0%);
+  }
+
+  .footer {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .socials {
+    position: static;
+    transform: none;
+  }
+
+  .termsNPrivacy {
+    display: flex;
+    align-items: center;
+    margin: 0%;
+  }
+
+  .logoFooter {
+    height: auto;
+  }
+
+  .terms, .privacy {
+      transition: 0.2s all;
+  }
+
+  .terms:hover, .privacy:hover {
+      font-size: 17px;
+      font-weight: 700;
+  }
 }
