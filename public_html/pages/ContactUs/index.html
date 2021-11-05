@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="eng" data-livestyle-extension="available">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="icon" href="favicon.ico" />
+    <!-- <link rel="stylesheet" href="/reg-form/intlTelInput.css" />
+    <link rel="stylesheet" href="/public_html/css/reset.css" />
+    <link rel="stylesheet" href="/public_html/css/burger.css" />
+    <link rel="stylesheet" href="/public_html/css/styles_mobile.css" />
+    <link rel="stylesheet" href="/public_html/css/styles_tablet.css" />
+    <link rel="stylesheet" href="/public_html/css/styles_desktop.css" />
+    <link rel="stylesheet" href="css/styles_desktop.css" /> -->
+    <link rel="stylesheet" href="../../css/burger.css" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/styles_mobile.css" />
+    <link rel="stylesheet" href="../../css/styles_tablet.css" />
+    <link rel="stylesheet" href="../../css/styles_desktop.css" />
+    <link rel="stylesheet" href="./css/styles_desktop.css" />
+  </head>
+
+  <body style="position: relative">
+    <header class="header">
+      <div class="">
+        <div class="topBlock container">
+          <img class="logoImgTop" src="./images/mainLogo.png" />
+          <nav role="navigation" class="nav">
+            <div id="menuToggle" class="burgerMenu">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+
+              <span></span>
+              <span></span>
+
+              <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+              <ul id="menu" class="navList">
+                <a href="../../index.html" class="navLink">
+                  <li class="navText">Home</li>
+                </a>
+                <a href="../aboutUs/index.html" class="navLink">
+                  <li class="navText">About us</li>
+                </a>
+
+                <a href="index.html" class="navLink">
+                  <li class="navText">Services</li>
+                </a>
+                <a href="../sectorsAndIndustries/index.html" class="navLink">
+                  <li class="navText">Sectors and Industries</li>
+                </a>
+                <a href="../packagesAndPrices/index.html" class="navLink">
+                  <li class="navText">Packages and prices</li>
+                </a>
+
+                <a href="../ContactUs/index.html" class="navLink">
+                  <li class="navText contact">Contact Us</li>
+                </a>
+              </ul>
+            </div>
+          </nav>
+          <nav class="desktopNav">
+            <ul class="navList">
+              <a href="../../index.html" class="navLink">
+                <li class="navText">Home</li>
+              </a>
+              <a href="../aboutUs/index.html" class="navLink">
+                <li class="navText">About us</li>
+              </a>
+
+              <a href="index.html" class="navLink">
+                <li class="navText">Services</li>
+              </a>
+              <a href="../sectorsAndIndustries/index.html" class="navLink">
+                <li class="navText">Sectors and Industries</li>
+              </a>
+              <a href="../packagesAndPrices/index.html" class="navLink">
+                <li class="navText">Packages and prices</li>
+              </a>
+
+              <a href="../ContactUs/index.html" class="navLink">
+                <li class="navText contact">Contact Us</li>
+              </a>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="contactMain">
+      <div class="sectionContactContainer main">
+        <section class="contacts">
+          <div class="infoContact container contactContainer">
+            <div class="leftContentContainer">
+              <h1 class="InfoTitle title">CONTACT US</h1>
+              <div class="textContainer">
+                <p class="InfoText ordinaryText">
+                  Need help? Get in touch with us through one of the available
+                  methods below.
+                </p>
+                <p class="InfoText ordinaryText">
+                  Leave your details and we will contact you back.
+                </p>
+              </div>
+            </div>
+            <div class="formWrapper">
+              <form
+                class=""
+                id="formElem"
+                action="../../mail-sender.php"
+                method="POST"
+                target="_top"
+              >
+                <div class="formInner">
+                  <div class="formGroup">
+                    <input
+                      type="text"
+                      class="field"
+                      required="required"
+                      placeholder="Full Name"
+                      pattern="[^0-9!@#\$\^&%\*\(\)\+=\-\[\]\{\}\|:<>\?,\.']+"
+                    />
+                  </div>
+                  <div class="formGroup">
+                    <input
+                      type="text"
+                      class="field w-input gtd-field-lname"
+                      required="required"
+                      placeholder="Company Name"
+                      pattern="[^0-9!@#\$\^&%\*\(\)\+=\-\[\]\{\}\|:<>\?,\.']+"
+                    />
+                  </div>
+                  <div class="formGroup">
+                    <input
+                      type="email"
+                      class="field w-input gtd-field-email"
+                      required="required"
+                      placeholder="Company Name"
+                      id="femail"
+                      name="femail"
+                      pattern="[A-Za-z0-9._%+-]{1,}@[a-zA-Z0-9._%+-]{1,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z0-9._%+-]{2,}[.]{1}[a-zA-Z]{2,})"
+                    />
+                  </div>
+                  <div class="formGroup">
+                    <input
+                      type="tel"
+                      class="field w-input gtd-field-tel"
+                      required="required"
+                      placeholder="Phone Number"
+                    />
+                  </div>
+                  <div class="formGroup">
+                    <textarea
+                      class="field textarea"
+                      placeholder="Message"
+                    ></textarea>
+                  </div>
+                  <div class="formGroup agreement">
+                    <div class="formGroupWrapper">
+                      <label class="formCheckbox" for="checkbox1">
+                        <input
+                          type="checkbox"
+                          id="checkbox1"
+                          class="checkbox"
+                        />
+                        <span class="formCheckboxText">
+                          Sign up to receive the latest news.</span
+                        >
+                      </label>
+                    </div>
+                    <div class="formGroupWrapper">
+                      <label class="formCheckbox" for="checkbox2">
+                        <input
+                          type="checkbox"
+                          id="checkbox2"
+                          class="checkbox"
+                        />
+                        <span class="formCheckboxText">
+                          I agree to your
+                          <a href="../terms/index.html">Terms and Conditions</a>
+                          and
+                          <a href="../privacy/index.html">Privacy Policy</a
+                          >.</span
+                        >
+                      </label>
+                    </div>
+                  </div>
+                  <div class="">
+                    <button
+                      class="mainButton formBtn"
+                      data-title="Contact us now"
+                      type="submit"
+                    >
+                      Contact us now<span class="arrow"></span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+              <div class="backdrop is-hidden">
+                <div class="modal">
+                  <p class="modalText">Your email was successfully sent</p>
+                  <button class="modalClose">
+                    Close it
+                    <img
+                      src="./images/arrow.png"
+                      alt="arrow"
+                      class="arrowImg"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="info">
+              <div class="infoBlock">
+                <h2 class="infoTitle">Phone</h2>
+                <p class="infoDesc">+37360081887</p>
+              </div>
+              <div class="infoBlock">
+                <h2 class="infoTitle">Email</h2>
+                <p class="infoDesc">innovate@gmail.com</p>
+              </div>
+              <div class="infoBlock">
+                <h2 class="infoTitle">ADRESS</h2>
+                <p
+                  class="infoDesc"
+                  style="text-decoration: none; max-width: 480px"
+                >
+                  MD-2001, str. Mihail Kogilniceanu, 17, Chisinau, Republic of
+                  Moldova
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer desktopWrapper container">
+      <img class="logoFooter" src="./images/mainLogo.png" />
+      <div class="termsNPrivacy">
+        <a href="../privacy/index.html" class="privacy">Privacy Policy</a>
+        <a href="../terms/index.html" class="terms">Terms of Use</a>
+      </div>
+      <div class="socials">
+        <a href="https://uk-ua.facebook.com/" class="socialLink">
+          <img class="socialImg" src="./images/facebook.png"
+        /></a>
+        <a href="https://ru.linkedin.com/" class="socialLink">
+          <img class="socialImg" src="./images/linkedin.png"
+        /></a>
+        <a href="https://twitter.com/" class="socialLink">
+          <img class="socialImg" src="./images/twitter.png"
+        /></a>
+      </div>
+    </footer>
+
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/modal.js"></script>
+  </body>
+</html>

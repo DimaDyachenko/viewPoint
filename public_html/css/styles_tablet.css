@@ -74,12 +74,45 @@
   }
 
   .termsNPrivacy {
-      margin-bottom: 0;
+    margin-bottom: 0;
   }
-
+  .formWrapper {
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    padding: 50px 60px;
+    margin-bottom: 100px;
+  }
   .socials {
     position: absolute;
     right: 0;
     transform: translate(-50%, -100%);
+  }
+
+  .number {
+    font-size: 70px;
+    line-height: 95%;
+    margin-right: 40px;
+  }
+  .sectors {
+    display: flex;
+    margin: 0 0 50px;
+  }
+  .colorBoxWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .show {
+    display: block;
+    margin-bottom: 80px;
+  }
+  .contactContainer {
+    padding: 10px 130px 20px;
+  }
+  .modalText {
+    font-size: 52px;
+    line-height: 95%;
+    max-width: 490px;
+    margin: 0 auto 40px;
   }
 }

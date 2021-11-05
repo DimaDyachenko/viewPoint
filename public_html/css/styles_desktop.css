@@ -140,7 +140,7 @@
     left: -1%;
   }
 
-  .infoCard {
+  .infoCard, .infoContact {
     display: flex;
   }
 
@@ -154,7 +154,9 @@
   .infoCard {
     padding: 0;
   }
-
+  .infoContact {
+    padding: 150px 0;
+  }
   .infoCard {
     margin: 150px 0;
   }
@@ -253,5 +255,42 @@
   .terms:hover, .privacy:hover {
       font-size: 17px;
       font-weight: 700;
+  }
+
+  .secWrapper {
+    flex-direction: row !important;
+  }
+  .sectors {
+    margin: 0 0 50px !important;
+  }
+  .custom {
+    display: block;
+  }
+  .training {
+    margin: 0 !important;
+    width: 100% !important;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .imgBlockOnlineTraining {
+    margin-right: 179px;
+  }
+  .formWrapper {
+    width: 50%;
+    margin-bottom: 0;
+  }
+  .info {
+    position: absolute;
+    top: 510px;
+  }
+  .textContainer p:first-child {
+  margin-bottom: 20px;
+  max-width: 498px;
+  }
+  .leftContentContainer {
+    margin-right: 30px;
+  }
+  .privacyContainer {
+    padding: 140px 40px;
   }
 }
