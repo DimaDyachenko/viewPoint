@@ -30,7 +30,7 @@ try {
     /* Set the subject. */
     $mail->Subject = 'viewpointinnovate';
     /* Set the mail message body. */
-    $mail->Body = 'Thank you for contacting Viewpoint Innovate, we received your message and will contact you shortly .
+    $mail->Body = 'Thank you for contacting Viewpoint Innovate, we received your message and will contact you shortly.
     Regards,
     Viewpoint Innovate team';
 
@@ -41,16 +41,16 @@ try {
     $mail->SMTPDebug = 0;
     /* SMTP server address. */
     //$mail->CharSet = "UTF-8";
-    $mail->Host = 'smtp-mail.outlook.com';
+    $mail->Host = 'smtp.gmail.com';
     /* Use SMTP authentication. */
     $mail->SMTPAuth = TRUE;
     /* Set the encryption system. */
     $mail->SMTPSecure = 'tls';
     $mail->MailerDebug = false;
     /* SMTP authentication username. */
-    $mail->Username = 'office@viewpointinnovate.com';
+    $mail->Username = 'viewpointinnovate@gmail.com';
     /* SMTP authentication password. */
-    $mail->Password = 'Xus41568';
+    $mail->Password = 'U]syh2{8N*4)tmFy';
     /* Set the SMTP port. */
     $mail->Port = 587;
     /* Finally send the mail. */
