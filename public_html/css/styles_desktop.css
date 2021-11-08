@@ -293,4 +293,9 @@
   .privacyContainer {
     padding: 140px 40px;
   }
+  .cookiesContainer {
+    top: 86%;
+    margin-left: -24%;
+    width: 112%;
+  }
 }

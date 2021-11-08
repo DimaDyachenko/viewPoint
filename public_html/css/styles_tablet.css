@@ -115,4 +115,31 @@
     max-width: 490px;
     margin: 0 auto 40px;
   }
+  .cookiesContainer {
+    background: #f6f6f6;
+    padding: 14px 18px;
+    position: absolute;
+    top: 116px;
+    border: 1px solid rgba(19, 0, 44, 0.2);
+    border-radius: 8px;
+    width: 91%;
+    margin-left: 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .cookiesWrapper {
+    margin-right: 25px;
+  }
+  .cookieBtnArrow, .cookieBtnClose {
+    display: none;
+  }
+  .cookiesText {
+    display: block;
+    margin-bottom: 0;
+  }
+  .cookieBtnAccept {
+    max-width: 98px;
+    padding: 8px 24px;
+    height: 34px;
+  }
 }
