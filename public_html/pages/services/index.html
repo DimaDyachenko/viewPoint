@@ -21,8 +21,6 @@
     <link rel="stylesheet" href="../../css/styles_tablet.css" />
     <link rel="stylesheet" href="../../css/styles_desktop.css" />
     <link rel="stylesheet" href="./css/styles_desktop.css" />
-
-
   </head>
 
   <body>
@@ -122,14 +120,24 @@
             <img class="topImg" src="./images/laptops.png" />
             <div class="cookiesContainer">
               <div class="cookiesWrapper">
-              <div class="cookieBtnWrapper">
-                <button class="cookieBtnArrow" type="button"><img class="cookieBtnArrowImg" src="./images/cookieArrow.png" alt=""></button>
-                <span class="cookieTitle">Cookie</span>
+                <div class="cookieBtnWrapper">
+                  <button class="cookieBtnArrow" type="button">
+                    <img
+                      class="cookieBtnArrowImg"
+                      src="./images/cookieArrow.png"
+                      alt=""
+                    />
+                  </button>
+                  <span class="cookieTitle">Cookie</span>
+                </div>
+                <button class="cookieBtnClose">+</button>
               </div>
-              <button class="cookieBtnClose">+</button>
-            </div>
               <p class="cookiesText">
-                We use cookies for better UX and analytics, and ads. Check our <a class="cookiesTextLink" href="./pages/privacy/index.html">Privacy Policy</a> for more details.
+                We use cookies for better UX and analytics, and ads. Check our
+                <a class="cookiesTextLink" href="./pages/privacy/index.html"
+                  >Privacy Policy</a
+                >
+                for more details.
               </p>
               <button class="cookieBtnAccept">Accept</button>
             </div>
@@ -139,9 +147,9 @@
       </div>
     </header>
     <main class="main">
-      <section class="infoSection">
+      <section class="infoSection" id="animation">
         <div class="infoCard container">
-          <div class="textBlock">
+          <div class="textBlock hide">
             <h2 class="infoSubtitle orange">Our Services</h2>
             <h1 class="InfoTitle title">Translation</h1>
             <p class="InfoText ordinaryText">
@@ -197,7 +205,7 @@
           </div>
         </div>
         <div class="infoCard container">
-          <div class="textBlock">
+          <div class="textBlock hide">
             <h2 class="infoSubtitle green">Our Training</h2>
             <h1 class="InfoTitle title">
               Online instructor – “Start learning now!”
@@ -284,8 +292,7 @@
           write back to you.
         </p>
         <button class="mainButton">
-          <a href="../ContactUs/index.html" class="mainButtonText"
-            >Contact Us</a
+          <a href="../ContactUs/index.html" class="mainButtonText">Contact Us</a
           ><span class="arrow"></span>
         </button>
       </div>
@@ -322,6 +329,28 @@
     <script src="../../js/jquery.js"></script>
     <script src="../../js/main.js"></script>
 
-   
+    <script>
+      $(function () {
+        // $(document).ready shorthand
+        $("animation").fadeIn("slow");
+      });
+
+      $(document).ready(function () {
+        /* Every time the window is scrolled ... */
+        $(window).scroll(function () {
+          /* Check the location of each desired element */
+          $(".hide").each(function (i) {
+            var bottom_of_object =
+              $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it it */
+            if (bottom_of_window > bottom_of_object) {
+              $(this).animate({ opacity: "1", "padding-top": "20px" }, 1000);
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
