@@ -550,4 +550,8 @@
   margin-top: 0px;
   margin-left: 10px;
 }
+
+.hide {
+  opacity: 0;
+}
 /* MODAL END */
