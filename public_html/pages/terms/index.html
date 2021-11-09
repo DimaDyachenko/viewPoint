@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="../../css/styles_mobile.css" />
     <link rel="stylesheet" href="../../css/styles_tablet.css" />
     <link rel="stylesheet" href="../../css/styles_desktop.css" />
-    <link rel="stylesheet" href="./css/styles_desktop.css" />
   </head>
 
   <body style="position: relative">
@@ -346,6 +345,18 @@
     </footer>
 
     <script src="../../js/jquery.js"></script>
-    <script src="../../js/modal.js"></script>
+    <script>
+      (() => {
+        const refs = {
+          openBurger: document.querySelector(".input"),
+          burger: document.querySelector(".navList"),
+        };
+        refs.openBurger.addEventListener("click", burger);
+
+        function burger() {
+          refs.burger.classList.toggle("is-vissually");
+        }
+      })();
+    </script>
   </body>
 </html>
