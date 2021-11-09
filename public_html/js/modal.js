@@ -5,10 +5,10 @@
       modal: document.querySelector('.backdrop'),
     };
   
-    refs.openModalBtn.addEventListener('click', toggleModal);
-    refs.closeModalBtn.addEventListener('click', toggleModal);
+    refs.openModalBtn.addEventListener('click', modal);
+    refs.closeModalBtn.addEventListener('click', modal);
   
-    function toggleModal() {
+    function modal() {
       refs.modal.classList.toggle('is-hidden');
     }
   })();
